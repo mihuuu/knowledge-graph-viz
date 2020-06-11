@@ -1,0 +1,71 @@
+@primary-blue: #ff9e6d;
+
+.side-panel {
+  padding: 15px;
+  height: 100vh;
+  .ant-tabs {
+    height: 100%;
+    .ant-tabs-tabpane {
+      height: 80vh;
+      overflow-y: auto;
+    }
+    // 溢出的滚动条样式
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+    ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-image: linear-gradient(120deg, #8ec5fc 0%,  #e0c3fc 100%);
+      // background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+      border-radius: 10px;
+    }
+  }
+}
+
+/* header */
+.row-item {
+  margin-left: 20px;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.logo-title svg {
+  width: 40px;
+}
+
+.logo-title span {
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+/* 侧边栏伸缩按钮 */
+.trigger {
+  position: absolute;
+  right: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.trigger:hover {
+  color: #1890ff;
+}
+
+
+/* 右键菜单 */
+.node-menu {
+  width: 150px;
+  display: none;
+  position: absolute;
+  z-index: 10;
+}
+
+.node-menu li:hover {
+  background-color: #eee;
+}

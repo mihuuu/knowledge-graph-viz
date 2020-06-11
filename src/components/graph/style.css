@@ -1,0 +1,42 @@
+#svg-graph {
+  background-color: #fafafa;
+}
+
+.node-hover {
+  stroke-width: 10;
+  stroke: #aaa;
+  stroke-opacity: 0.3;
+}
+
+.node-focus {
+  /* stroke-width: 15; */
+  stroke: #ff9e6d;
+  /* stroke-opacity: 0.4; */
+  animation-duration: 1s;
+  animation-name: ripple;
+  animation-iteration-count: infinite;
+}
+
+@keyframes ripple {
+  from {
+    stroke-width: 5;
+    stroke-opacity: 0.6; 
+  }
+
+  to {
+    stroke-width: 25;
+    stroke-opacity: 0;
+  }
+}
+
+.node:hover text {
+  font-weight: 800;
+}
+
+.link:hover text {
+  font-weight: 800;
+}
+
+.hide-element {
+  opacity: 0.2;
+}
