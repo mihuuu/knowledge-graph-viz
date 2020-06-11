@@ -29,7 +29,7 @@
 
 <br>
 
-![图谱可视化.gif](https://i.loli.net/2020/06/12/yrSUG2TOvQuHxPo.gif)
+![demo.png](https://i.loli.net/2020/06/12/TcfNIgoSwxOMzK3.png)
 
 <br>
 
